@@ -4,7 +4,7 @@ import SearchBar from './SearchBar'
 import Category from "./Category"
 import LoadingSpinner from './LoadingSpinner'
 
-import {dayOfWeekAsString, timeOfDayAsString, parsePostsIntoPostsByDay, parsePostsIntoPostsByTime, parsePostsIntoPostsByTitle, parsePostsIntoPostsByLength } from './helperFunctions';
+import {parsePostsIntoPostsByDay, parsePostsIntoPostsByTime, parsePostsIntoPostsByTitle, parsePostsIntoPostsByLength } from './helperFunctions';
 
 
 
@@ -47,13 +47,8 @@ const Dashboard = () => {
             <SearchBar value={subreddit} setValue={setSubreddit}/>
             {loading ? <LoadingSpinner/> : (postSearch && 
             <div>
-                <Category postsByValue={postsByDay} title={"Most common day"} labelFunction={dayOfWeekAsString} total={7}/>
-                {console.log(postsByDay)}
-                <Category postsByValue={postsByTime} title={"Most common hour"} labelFunction={timeOfDayAsString} total={24}/>
-                {console.log(postsByTime)}
-                {/*<Category postsByValue={postsByDay} title={"Most common day"} word={""} array={postsByDay} total={7}/>
-                <Category postsByValue={postsByTime} title={"Most common hour"} word={""} array={postsByTime} total={24}/>*/}
-                
+                <Category postsByValue={postsByDay} title={"Most common day"} word={""} array={postsByDay} total={7}/>
+                <Category postsByValue={postsByTime} title={"Most common hour"} word={""} array={postsByTime} total={24}/>
                 <Category postsByValue={postsByTitle} title={"Most common word in title"} word={""}array={postsByTitle} total={10}/>
                 <Category postsByValue={postsByLength} word={"Length: "} title={"Most common title length"}array={postsByLength} total={5}/>
 
