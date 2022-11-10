@@ -1,17 +1,23 @@
 import React from "react"
 
+
+
 const SearchBar = ({ value, setValue }) => {
+
+    
     return(
         <div className = "search">
-            <h1 className="searchLabel">Enter subreddit</h1>
+            <h1 className="searchLabel">Reddit Post Optimizer</h1>
+            <h3 className="description">Enter a subreddit below and the optimizer will tell you the best day, time, terms and length for your post</h3>
             <form className = "form">
                 <input 
-                    type="search" 
+                    type="text" 
                     id="searchForm" 
                     className ="searchForm" 
                     value={value}
                     onChange={e => setValue(e.target.value)}
-                    placeholder = "Search..."/>
+                    placeholder = "Enter subreddit..."/>
+                
             </form>
 
         </div>
@@ -20,4 +26,3 @@ const SearchBar = ({ value, setValue }) => {
 
 export default SearchBar
 
-//<button type="submit" className="searchButton" value={value} onClick={e => setValue(e.target.value)}> Enter </button>

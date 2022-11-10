@@ -11,11 +11,6 @@ export const parsePostsIntoPostsByDay = (posts) => {
         postsByDay.push({number: postsByDayHelper[step], term: dayOfWeekAsString(step)})
     }
     
-    postsByDay.sort((a,b) => b.number - a.number);
-
-    console.log(postsByDay)
-
-    console.log(postsByDay)
     return postsByDay;
 }
 
@@ -33,10 +28,7 @@ export const parsePostsIntoPostsByTime = (posts) => {
     for(let step = 0; step < 24; step ++){
         postsByTime.push({number: postsByTimeHelper[step], term: timeOfDayAsString(step)})
     }
-    
-    postsByTime.sort((a,b) => b.number - a.number);
 
-    console.log(postsByTime)
     return postsByTime;
 }
 

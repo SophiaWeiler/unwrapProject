@@ -10,19 +10,22 @@ import "./style.css"
 
 function App(){
     return (
-        <Dashboard />
+        <div className="wholeApp">
+            <Dashboard />
+        </div>
+      
     )
 }
 
 export default App
 
 /*
-1. change search bar to button click
-2. create a loading state on dashboard for when API is loading info
-3. when you press search, set loading to true, then when all data in, set data to false
-5. in loading time, computation for all of the functions has to be included
 
-
+What I would do if I had more time to improve:
+1. make sure that it actually uses the top 500 posts
+2. add a button to the search bar so that it only reloads on click
+3. make sure that the loading state stays until all of the computations are completed
+4. make the components smaller/easier to read by making sure that everything is visible on one page 
 
 
 */ 

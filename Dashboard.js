@@ -14,6 +14,7 @@ const Dashboard = () => {
     const [subreddit, setSubreddit] = useState('');
     const [loading, setLoading] = useState(false);
     const [postSearch, setPostSearch] = useState(false);
+    
 
 
     useEffect(() => {
@@ -24,11 +25,12 @@ const Dashboard = () => {
             if (data != null) {
                 setPosts(data.data.children);
             }
-
             setLoading(false);
             setPostSearch(true);
         }
 
+        
+        
         getData();
         console.log(posts)
 
@@ -42,7 +44,7 @@ const Dashboard = () => {
 
 
     return (
-        <div>
+        <div className="dashboard">
             
             <SearchBar value={subreddit} setValue={setSubreddit}/>
             {loading ? <LoadingSpinner/> : (postSearch && 
@@ -50,7 +52,7 @@ const Dashboard = () => {
                 <Category postsByValue={postsByDay} title={"Most common day"} word={""} array={postsByDay} total={7}/>
                 <Category postsByValue={postsByTime} title={"Most common hour"} word={""} array={postsByTime} total={24}/>
                 <Category postsByValue={postsByTitle} title={"Most common word in title"} word={""}array={postsByTitle} total={10}/>
-                <Category postsByValue={postsByLength} word={"Length: "} title={"Most common title length"}array={postsByLength} total={5}/>
+                <Category postsByValue={postsByLength} word={"Length: "} title={"Most common title length (count of words)"}array={postsByLength} total={5}/>
 
                 
         

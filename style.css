@@ -1,4 +1,9 @@
-/*App*/
+html{
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+/*Dashboard*/
 .categories{
     margin-left: auto;
     margin-right: auto;
@@ -6,6 +11,8 @@
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
+
 
 
 /* Box */
@@ -26,16 +33,21 @@
     margin-top: 5px;
     overflow: hidden;
     max-height: 60px;
+
   }
 
 .number{
     text-align: center;
     color: black;
+    font-family: montserrat, sans-serif;
+    font-size: 45px;
 }
 
 .label{
     text-align: center;
     color: grey;
+    font-family: montserrat, sans-serif;
+    font-size: 25px;
 }
 
 /* Category */
@@ -51,9 +63,15 @@
     padding-top: 0px;
     min-width: 100%;
     white-space: nowrap;
+ 
+}
 
-    
-    
+
+.categoryTitle{
+    font-family: montserrat, sans-serif;
+    color: #e9f0ee;
+    text-shadow: 1px 2px 1px black;
+    font-style: italic;
 }
 
 .category::-webkit-scrollbar{
@@ -82,9 +100,22 @@
 
 /* SearchBar */
 .searchLabel{
-    font-family: "Garamond", Times, serif;
+    font-family: montserrat, sans-serif;
     margin-left: 15%;
     text-align: left;
+    color: #e9f0ee;
+    text-shadow: 1px 2px 1px black;
+    font-style: italic;
+    font-size: 40px;
+}
+
+.description{
+    font-family: montserrat, sans-serif;
+    margin-left: 15%;
+    text-align: left;
+    color: black;
+    margin-right: 15%;
+    font-size: 16px; 
 }
 
 .searchForm{
@@ -95,12 +126,13 @@
     width: 70%;
     text-align: left;
     border-radius: 10px;
-    font-family: "Garamond", Times, serif;
+    font-family: montserrat, sans-serif;
+    box-shadow: 0px 1px 3px 0px rgb(82, 82, 88);
     
 }
 
 .search{
-    margin-top: 22%;
+    margin-top: 8%;
 }
 
 .searchButton{
@@ -132,3 +164,4 @@
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
   }
+

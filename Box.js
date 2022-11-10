@@ -10,9 +10,4 @@ function Box(props){
 }
 
 
-
-
 export default Box
-
-//<h2 className = "number">{props.number}</h2>
-//<h4 className = "label">{props.label}</h4>
