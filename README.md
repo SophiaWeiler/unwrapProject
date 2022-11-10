@@ -1,12 +1,12 @@
 Steps to run code:
 
-1. in the terminal run
-npx create-react-app sophia-weiler-subreddit
-cd sophia-weiler-subreddit
-git clone *this repository*
-mv unwrapProject src
-cd src
-npm start
+in the terminal run:
+1. npx create-react-app sophia-weiler-subreddit
+2. cd sophia-weiler-subreddit
+3. git clone *this repository*
+4. mv unwrapProject src
+5. cd src
+6. npm start
 
 
 Dependencies in my react app:
