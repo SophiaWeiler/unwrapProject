@@ -4,6 +4,7 @@ Steps to run code:
 2. clone the repository on local device
 3. run npm start
 4. Dependencies in my react app:
+
 "dependencies": {
 "@testing-library/jest-dom": "^5.16.5",
 "@testing-library/react": "^13.4.0",
@@ -16,8 +17,7 @@ Steps to run code:
 "react-scripts": "5.0.1",
 "react-spinners": "^0.13.6",
 "snoowrap": "^1.23.0",
-"web-vitals": "^2.1.4"
-}
+"web-vitals": "^2.1.4"}
         
         
 What I would do if I had more time to improve:
