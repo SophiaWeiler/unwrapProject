@@ -29,9 +29,10 @@ Dependencies in my react app:
 What I would do if I had more time to improve:
 
 1. make sure that it actually uses the top 500 posts
-2. add a button to the search bar so that it only reloads on click
-3. make sure that the loading state stays until all of the computations are completed
-4. make the components smaller/easier to read by making sure that everything is visible on one page (no scrolling)
-5. write a set of automated tests 
-6. improve user experience by getting user feedback
-7. display message of not a valid subreddit if invalid input
+2. get past the issue of "No 'Access-Control-Allow-Origin' header is present" (found this error and didn't have time to get past this issue)
+3. add a button to the search bar so that it only reloads on click
+4. make sure that the loading state stays until all of the computations are completed
+5. make the components smaller/easier to read by making sure that everything is visible on one page (no scrolling)
+6. write a set of automated tests 
+7. improve user experience by getting user feedback
+8. display message of not a valid subreddit if invalid input
