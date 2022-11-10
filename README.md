@@ -1,10 +1,15 @@
 Steps to run code:
 
-1. download react version 0.1.0
-2. clone the repository on local device
-3. run npm start
-4. Dependencies in my react app:
+1. in the terminal run
+npx create-react-app sophia-weiler-subreddit
+cd sophia-weiler-subreddit
+git clone *this repository*
+mv unwrapProject src
+cd src
+npm start
 
+
+Dependencies in my react app:
 "dependencies": {
 "@testing-library/jest-dom": "^5.16.5",
 "@testing-library/react": "^13.4.0",
