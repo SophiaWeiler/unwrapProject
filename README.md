@@ -1,3 +1,5 @@
+Steps to run code:
+
 1. download react version 0.1.0
 2. clone the repository on local device
 3. run npm start
