@@ -1,3 +1,5 @@
+//box component
+
 import React from "react"
 
 function Box(props){

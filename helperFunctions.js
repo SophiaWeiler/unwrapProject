@@ -1,3 +1,4 @@
+//parses over posts to add them to a array that is returned for the day
 export const parsePostsIntoPostsByDay = (posts) => {
     const postsByDayHelper = [0,0,0,0,0,0,0]
 
@@ -14,7 +15,7 @@ export const parsePostsIntoPostsByDay = (posts) => {
     return postsByDay;
 }
 
-
+//parses over posts to add them to a array that is returned for the time
 export const parsePostsIntoPostsByTime = (posts) => {
     const postsByTimeHelper = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
     for (let post of posts) {
@@ -33,7 +34,7 @@ export const parsePostsIntoPostsByTime = (posts) => {
 }
 
 
-
+//parses over posts to add them to a array that is returned for the title
 export const parsePostsIntoPostsByTitle = (posts) => {
     const postsByTitle = []
 
@@ -58,6 +59,7 @@ export const parsePostsIntoPostsByTitle = (posts) => {
     
 }
 
+//parses over posts to add them to a array that is returned for the length
 export const parsePostsIntoPostsByLength = (posts) => {
     const postsByLength = []
 

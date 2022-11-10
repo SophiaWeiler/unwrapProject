@@ -20,7 +20,7 @@ const CategoryList = (props) => {
         }
         
     return (
-        <div className= "cat">
+        <div>
             <h1 className="categoryTitle">{props.title}</h1>
             <div className = "category">
                 <div className = "categoryTrack">
